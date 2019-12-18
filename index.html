@@ -13,5 +13,49 @@
             You can support it with your feedbacks...
         </p>
     </header>
+    <section>
+        <form id="survey-form" action="">
+            <label for="name" id="name-label">Username</label>
+            <input 
+                type="text" 
+                id="name" 
+                name="name"
+                placeholder="Enter Your Username" 
+                required>
+            <label for="email" id="email-label">E-mail</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email"
+                placeholder="Enter Your E-mail" 
+                required>
+            <label for="number" id="number-label">Age (Optional)</label>
+            <input 
+                type="number" 
+                name="age"
+                min="13"
+                max="100"
+                id="number"
+                placeholder="Your Age">
+            <p>How did you heard about Q Space?</p>
+            <select name="dropdown" id="dropdown">
+                <option value="friend">by a friend</option>
+                <option value="store-suggest">play store suggest</option>
+                <option value="search">while searching on google play</option>
+            </select>
+            <fieldset>
+                <legend>Do you like Q Space?</legend>
+                <input type="radio" name="" id="">
+                <label for=""></label>
+            </fieldset>
+            <fieldset>
+                <legend>What would you expect in the future?</legend>
+                <input type="checkbox" name="" id="">
+                <label for=""></label>
+            </fieldset>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Any additional comments?"></textarea>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </section>
 </body>
 </html>
