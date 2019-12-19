@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Coda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Q Space Feedback Survey</title>
 </head>
 <body>
@@ -13,49 +15,100 @@
             You can support it with your feedbacks...
         </p>
     </header>
-    <section>
+    <main>
         <form id="survey-form" action="">
-            <label for="name" id="name-label">Username</label>
-            <input 
-                type="text" 
-                id="name" 
-                name="name"
-                placeholder="Enter Your Username" 
-                required>
-            <label for="email" id="email-label">E-mail</label>
-            <input 
-                type="email" 
-                id="email" 
-                name="email"
-                placeholder="Enter Your E-mail" 
-                required>
-            <label for="number" id="number-label">Age (Optional)</label>
-            <input 
-                type="number" 
-                name="age"
-                min="13"
-                max="100"
-                id="number"
-                placeholder="Your Age">
-            <p>How did you heard about Q Space?</p>
-            <select name="dropdown" id="dropdown">
-                <option value="friend">by a friend</option>
-                <option value="store-suggest">play store suggest</option>
-                <option value="search">while searching on google play</option>
-            </select>
-            <fieldset>
+            <div class="form-groups">
+                <label for="name" id="name-label">Username</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name"
+                    placeholder="Enter Your Username" 
+                    class="form-members"
+                    required>
+            </div>
+            <div class="form-groups">
+                        <label for="email" id="email-label">E-mail</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email"
+                            placeholder="Enter Your E-mail" 
+                            class="form-members"
+                            required>
+            </div>
+            <div class="form-groups">
+                <label for="number" id="number-label">Age (Optional)</label>
+                <input 
+                    type="number" 
+                    name="age"
+                    min="13"
+                    max="100"
+                    id="number"
+                    class="form-members"
+                    placeholder="Your Age">
+            </div>
+            <div class="form-groups">
+                <p>How did you heard about Q Space?</p>
+                <select name="dropdown" id="dropdown" class="form-members" required>
+                    <option disabled selected value>Select One</option>
+                    <option value="friend">by a friend</option>
+                    <option value="store-suggest">play store suggest</option>
+                    <option value="search">while searching on google play</option>
+                    <option value="other">other</option>
+                </select>
+            </div>
+            <fieldset class="vertical-choices">
                 <legend>What do you think about Q Space?</legend>
-                <input type="radio" name="awesome" id="awesome" value="awesome">
-                <label for="awesome">Awesome</label>
+                <label>
+                    <input 
+                        type="radio" 
+                        name="awesome" 
+                        id="awesome" 
+                        value="awesome"
+                        checked>
+                    Awesome
+                </label>
+                <label>
+                    <input type="radio" name="average" id="average" value="average">
+                    Above average
+                </label>
+                <label>
+                    <input type="radio" name="okay" id="okay" value="okay">
+                    It's ok
+                </label>
+                <label>
+                    <input type="radio" name="bad" id="bad" value="bad">
+                    It's bad
+                </label>
             </fieldset>
-            <fieldset>
+            <fieldset class="vertical-choices">
                 <legend>What would you expect in the future?</legend>
-                <input type="checkbox" name="" id="">
-                <label for=""></label>
+                <label>
+                    <input type="checkbox" name="more-music" id="more-music" value="more-music">
+                    More and various musics
+                </label>
+                <label>
+                    <input type="checkbox" name="more-stages" id="more-stages" value="more-stages">
+                    More stages
+                </label>
+                <label>
+                    <input type="checkbox" name="more-info" id="more-info" value="more-info">
+                    More info in the info page
+                </label>
+                <label>
+                    <input type="checkbox" name="other" id="other" value="other">
+                    Other
+                </label>
             </fieldset>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Any additional comments?"></textarea>
-            <button id="submit" type="submit">Submit</button>
+            <div class="form-groups">
+                <p>Any comments or suggestions?</p>
+                <textarea name="comment" id="comment" placeholder="Any additional comments?"></textarea>
+            </div>
+            <div>
+                <button id="submit" type="submit">Submit</button>
+            </div>
         </form>
-    </section>
+    </main>
 </body>
 </html>
