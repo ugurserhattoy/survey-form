@@ -1,5 +1,6 @@
 :root {
     --dark-space: #08040a;
+    --dark-space-alpha: rgba(8, 4, 10, 0.8);
     --light-space: #2a1f51;
     --bg-space: #333333;
     --white-space: #efefef;
@@ -25,7 +26,7 @@ header {
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
     padding: 1.25rem;
-    background-color: var(--dark-space);
+    background-color: var(--dark-space-alpha);
     text-align: center;
     color: var(--white-space);
 }
